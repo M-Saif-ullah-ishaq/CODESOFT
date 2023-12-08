@@ -1,0 +1,213 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Reservation System</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+   body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  nav {
+    background-color: #192a56; /* Dark blue color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav img {
+    height: 40px; /* Adjust the height as needed */
+    width: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495e; /* Darker blue color */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .airplane-container {
+      width: 100%; /* Adjust the width and height as needed */
+      height: 44%;
+      background-image: url('/download.jpeg'); /* Replace with the path to your airplane image */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .content {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      /* text-align: ; */
+    }
+    #reservationForm{
+      font-size: x-large;
+    }
+    .blue{
+      background-color: #192a56;
+      width: fit-content;
+      align-items: start;
+      /* background-position: center; */
+      margin-left: 5%;
+      margin-top: -1% ;
+      
+    }
+    /* body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    } */
+
+    .form-section {
+      margin-bottom: 10px;
+      font-size:x-large;
+    }
+    .form-section input{
+      font-size: large;
+    }
+
+    label {
+      /* padding-right: 10px; */
+      margin-right: 10px;
+    }
+
+    input, label {
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    .blad img{
+      width: 100%;
+      height: 100%;
+      margin-top: 15%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+
+    <nav>
+      <img src="logo.png" alt="Logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <div class="dropdown-content">
+              <a href="#">Our Team</a>
+              <a href="#">Mission</a>
+              <a href="#">Vision</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Blog</a>
+            <div class="dropdown-content">
+              <a href="#">Latest Posts</a>
+              <a href="#">Categories</a>
+            </div>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div class="airplane-container content">
+    <div class="blue">
+         
+      <h1>Ticket Reservation System</h1>
+      <form id="reservationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="seatNumber">Seat Number:</label>
+        <input type="text" id="seatNumber" name="seatNumber" required>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit">Reserve Ticket</button>
+      </form>
+      <div class="form-section">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+        <label>Round trip:</label>
+        <input type="radio" name="option1" value="value1">
+        <label>One Way:</label>
+        <input type="radio" name="option1" value="value2">
+        <label>Multi City:</label>
+        <input type="radio" name="option1" value="value3">
+      </div>
+      
+      <div class="form-section">
+        
+        <label>From:</label> 
+        <input type="text" name="input1">
+        <label>TO:</label> 
+        <input type="text" name="input2">
+        <label>Cabnit class:</label>
+        <input type="text" name="input3">
+      </div>
+      
+      <div class="form-section">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+        <label>add nearby airports:</label>
+        <input type="radio" name="option2" value="valueA">
+        <label>add nearby airports:</label>
+        <input type="radio" name="option2" value="valueB">
+      </div>
+      
+      <div class="form-section">
+        <label>Input 4:</label>
+        <input type="text" name="input4">
+        <label>Input 5:</label>
+        <input type="text" name="input5">
+        <label>Input 6:</label>
+        <input type="text" name="input6">
+        <label>Input 7:</label>
+        <input type="text" name="input7">
+        <!-- <label>Input 8:</label>
+        <input type="text" name="input8"> -->
+      </div>
+      <script src="app.js"></script>
+      <script src="server.js"></script>
+    </div>
+  </div>
+  <div class="blad">
+    <img src="/Screenshot 2023-12-05 151146.png" alt="">
+  </div>
+    <!-- </div> -->
+  </body>
+</html>
