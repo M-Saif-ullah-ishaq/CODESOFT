@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+     float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    
+  }
+  h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  nav a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .logo {
+    float: left;
+    padding: 10px;
+  }
+
+  /* rows */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    width: 50%;
+    padding: 10px;
+    font-size: larger;
+    box-sizing: border-box;
+    border: none;
+}
+.box h1{
+  color: black;
+}
+.open{
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  font-size: larger;
+  box-sizing: border-box;
+  /* border:2px solid black; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.b-1{
+    padding-top: 80px;
+}
+.b-2 img{
+
+}
+.but{
+  text-align: center;
+  margin: 30px;
+}
+.button{
+  text-align: center;
+    background: rgba(128, 0, 128, 0.801);
+    border: none;
+    margin-left: 10px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+} .button a{
+  color: white;
+  font-size: 20px;
+  font-style: none;
+}
+.skills,.open p,.big ,.task p,.blog p,.contact p{
+  padding-top: 20px;
+  color: grey;
+  font-size: large;
+  align-items: center;
+}
+.achievment p{
+  padding-top:none;
+  color: grey;
+  font-size: large;
+  align-items: center;
+}
+.img{
+  width: 30px;
+}
+/* .pwd{
+  display:flex;
+  justify-content:  space-between;
+} */
+.certificate{
+  
+  width: 33%;
+  padding: 3px;
+  margin: 30px;
+  font-size: larger;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  /* border:2px solid black; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.certificates{
+  
+  width: 48%;
+  padding: 3px;
+  margin: 30px;
+  font-size: larger;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  /* border:2px solid black; */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: background 0.8s ease;
+}
+.certificates:hover{
+  background: #800080;
+  color: white;
+  background: linear-gradient(to bottom left, #570339 10%, #6f0451 50%, #820578 100%); /* Gradient for color spread */
+        
+}
+.certificate img{
+  width: 80%;
+}
+.tasks{
+  align-items: center;
+  padding-left: 35%;
+  padding-top: 5%;
+  padding-bottom: 5%; 
+}
+.gk-1{
+  /* border:solid black; */
+  width:150%;
+}
+.gk{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gk img{
+  height: 100%;
+}
